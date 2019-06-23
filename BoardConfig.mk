@@ -78,6 +78,7 @@ TW_INCLUDE_NTFS_3G := true
 TW_IGNORE_MISC_WIPE_DATA := true
 TW_NEW_ION_HEAP := true
 TW_HAS_EDL_MODE := true
+TW_USE_TOOLBOX := true
 
 # Encryption support
 TW_INCLUDE_CRYPTO := false
