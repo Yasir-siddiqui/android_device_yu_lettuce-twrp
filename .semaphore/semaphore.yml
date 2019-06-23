@@ -1,0 +1,18 @@
+version: v1.0
+name: BuildingTWRP
+agent:
+  machine:
+    type: e1-standard-4
+    os_image: ubuntu1804
+blocks:
+  - name: "Build"
+    task:
+      secrets:
+      - name: twrp
+      jobs:
+      - name: Compile Recovery
+        commands:
+          - checkout
+          - install-package bc
+          - wget https://raw.githubusercontent.com/Yasir-siddiqui/NotKernelCi/master/twrp
+          - bash twrp
